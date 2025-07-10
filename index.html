@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.2.1/html2canvas.min.js"></script>
+
+    <title>CM Lab</title>
+  </head>
+  <body>
+    <div class="form-field">
+         <h4 class="logo">CHUKWUNAZA MEDICAL LABORATORY</h4>
+
+    <h3 style="margin-bottom: 5px;">Front Page</h3>
+    <button class="accordion">Patient Details</button>
+    <div class="panel">
+      <form class="section_1">
+        <div>
+          <label for="patient_name">Patient Name</label>
+          <input type="text" id="patient_name" />
+        </div>
+
+        <div>
+          <label for="reciept_no">Reciept No.</label>
+          <input type="text" id="reciept_no" />
+        </div>
+        <div>
+          <label for="age_input">Patient age</label>
+          <input type="text" id="age_input" />
+        </div>
+        <div>
+          <label for="sex_input">SEX</label>
+          <input type="text" id="sex_input" />
+        </div>
+        <div>
+          <label for="lab_no">Laboratory No.</label>
+          <input type="text" id="lab_no_input" />
+        </div>
+        <div>
+          <label for="nature_of_specimen_input">Nature of Specimen</label>
+          <input type="text" id="nature_of_specimen_input" />
+        </div>
+        <div>
+          <label for="date_of_collection_input"
+            >Date of date_of_collection</label
+          >
+          <input type="text" id="date_of_collection_input" />
+        </div>
+
+        <div>
+          <label for="time_of_collection_input">Time of Collection</label>
+          <input type="text" id="time_of_collection_input" />
+        </div>
+
+        <div>
+          <label for="examination_required_input">Examination Required</label>
+          <input type="text" id="examination_required_input" />
+        </div>
+        <div>
+          <label for="address_input">Address</label>
+          <input type="text" id="address_input" />
+        </div>
+        <div>
+          <label for="company_health_input">Company Health</label>
+          <input type="text" id="company_health_input" />
+        </div>
+        <div>
+          <label for="company_health_insurance_ID_input"
+            >Company ID Health Insurance ID</label
+          >
+          <input type="text" id="company_health_insurance_ID_input" />
+        </div>
+      </form>
+    </div>
+
+    <button class="accordion">Test values</button>
+    <div class="panel">
+      <form class="section_2">
+        <div style="width: 100%;">
+          <label for="urinalysis_input">Urinalysis</label>
+          <input type="text" id="urinalysis_input" />
+        </div>
+        <div style="width: 100%;">
+          <label for="appearance_input">Appearance</label>
+          <input type="text" id="appearance_input" />
+        </div>
+        <div style="width: 100%;">PH</label>
+          <input type="text" id="ph_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="protein_value">Protein</label>
+          <input type="text" id="protein_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="glucose_value">Glucose</label>
+          <input type="text" id="glucose_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="blood_value">Blood</label>
+          <input type="text" id="blood_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="bilirubin_value">Bilirubin</label>
+          <input type="text" id="bilirubin_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="urobilinogen_value">Urobilinogen</label>
+          <input type="text" id="urobilinogen_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="ketone_value">Ketone</label>
+          <input type="text" id="ketone_value" Ketone/>
+        </div>
+        <div style="width: 100%;">
+          <label for="nitrite_value">Nitrite</label>
+          <input type="text" id="nitrite_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="ascorbic_acid_value">Ascorbic Acid</label>
+          <input type="text" id="ascorbic_acid_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="leucoytes_value">Leucoytes</label>
+          <input type="text" id="leucoytes_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="specific_gravity_value">Specific Gravity</label>
+          <input type="text" id="specific_gravity_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="wbc_value">WBC</label>
+          <input type="text" id="wbc_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="rbc_value">RBC</label>
+          <input type="text" id="rbc_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="cast_value">Cast</label>
+          <input type="text" id="cast_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="crystals_value">Crystals</label>
+          <input type="text" id="crystals_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="bacteria_debris_value">Bacteria Debris</label>
+          <input type="text" id="bacteria_debris_value" />
+        </div>
+        <div style="width: 100%;">
+          <label for="epithelial_cells_value">Epithelial Cells</label>
+          <input type="text" id="epithelial_cells_value" />
+        </div>
+        <!-- <div style="width: 100%;">
+          <label for="others_value"></label>
+          <input type="text" id="others_value" />
+        </div>
+        <div>
+          <label for=""></label>
+          <input type="text" id="" />
+        </div> -->
+      </form>
+    </div>
+    <button class="accordion">Test values</button>
+    <div class="panel">
+      <form class="section_3">
+         <div>
+          <label for="occult_blood_value">Occult Blood</label>
+          <input type="text" id="occult_blood_value" />
+        </div>
+         <div>
+          <label for="blood_microfileria_value">Blood Microfileria</label>
+          <input type="text" id="blood_microfileria_value" />
+        </div>
+        <div>
+          <table class="form-table" style="border: 0;">
+          <tr>
+            <th class="remove-border-all">O-ANTIGEN</th>
+            <th class="remove-border-all">H-ANTIGEN</th>
+          </tr>
+          <tr>
+            <td class="remove-border-all"><input type="text" id="o-antigen_1"></td>
+            <td class="remove-border-all"><input type="text" id="h-antigen_1"></td>
+          </tr>
+          <tr>
+            <td class="remove-border-all"><input type="text" id="o-antigen_2"></td>
+            <td class="remove-border-all"><input type="text" id="h-antigen_2"></td>
+          </tr>
+          <tr>
+            <td class="remove-border-all"><input type="text" id="o-antigen_3"></td>
+            <td class="remove-border-all"><input type="text" id="h-antigen_3"></td>
+          </tr>
+          <tr>
+            <td class="remove-border-all"><input type="text" id="o-antigen_4"></td>
+            <td class="remove-border-all"><input type="text" id="h-antigen_4"></td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <label for="comment1_value">Comment</label>
+        <input type="text" id="comment1_value">
+      </div>
+        
+      <div>
+        <label for="HBSAG">HBSAG</label>
+        <input type="text" id="HBSAG">
+      </div>
+      <div>
+        <label for="HCV">HCV</label>
+        <input type="text" id="HCV">
+      </div>
+      <div>
+        <label for="VDRL">VDRL</label>
+        <input type="text" id="VDRL">
+      </div>
+      <div>
+        <label for="helicobacter_value">Helicobacter pylori</label>
+        <input type="text" id="helicobacter_value">
+      </div>
+      <div>
+        <label for="blood_pregnancy_test_value">Blood Pregnancy test</label>
+        <input type="text" id="blood_pregnancy_test_value">
+      </div>
+      <!-- <div>
+        <label for=""></label>
+        <input type="text" id="">
+      </div> -->
+        
+      </form>
+    </div>
+
+    <h3 style="margin-top: 40px; margin-bottom: 5px;">Back Page</h3>
+        <button class="accordion">Test Values</button>
+    <div class="panel">
+      <form class="section_1">
+        <div>
+          <label for="specimen2">Specimen</label>
+          <input type="text" id="specimen2" />
+        </div>
+        <div>
+          <label for="microscopy">Microscopy</label>
+          <input type="text" id="microscopy" />
+        </div>
+        <div>
+          <label for="culture_textarea">Culture</label>
+          <input type="text" id="culture_textarea" />
+        </div>
+
+
+      </form>
+    </div>
+
+    <button class="accordion">Test values</button>
+    <div class="panel">
+      <form style="padding: 0 5px;" class="section_2">
+                      <div  class="flex column">
+            <p
+              class=" h-1cm flex justify-center align-center text-bold"
+            >
+              SENSITIVITY TESTING
+            </p>
+            <div  style="gap: 10px;" class="flex colum">
+              <div style="width: 3cm;" class="flex column">
+                <p
+                  class="center h-1cm flex align-center justify-center text-bold"
+                >
+                  1
+                </p>
+                <div style="gap: 5px;" class="flex">
+                  <div style="width: 1.5cm;" >
+                    <p
+                      class="center h-1cm  flex justify-center align-center text-bold"
+                    >
+                      S
+                    </p>
+                    <input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row1"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row2"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row3"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row4"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row5"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row6"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row7"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row8"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row9"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row10"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row11"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row12"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row13"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row14"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s1-row15"
+                    />
+                  </div>
+                  <div style="width: 1.5cm;">
+                    <p
+                      class="center h-1cm flex justify-center align-center text-bold"
+                    >
+                      R
+                    </p>
+                    <input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row1"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row2"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row3"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row4"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row5"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row6"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row7"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row8"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row9"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row10"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row11"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row12"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row13"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row14"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r1-row15"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div style="width: 3cm;"  class="flex column">
+                <p
+                  class="center h-1cm flex align-center justify-center text-bold"
+                >
+                  2
+                </p>
+                <div style="gap: 5px;" class="flex">
+                  <div style="width: 1.5cm;">
+                    <p
+                      class="center h-1cm flex justify-center align-center text-bold"
+                    >
+                      S
+                    </p>
+                    <input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row1"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row2"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row3"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row4"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row5"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row6"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row7"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row8"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row9"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row10"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row11"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row12"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row13"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row14"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="s2-row15"
+                    />
+                  </div>
+                  <div style="width: 1.5cm;">
+                    <p
+                      class="center h-1cm flex justify-center align-center text-bold"
+                    >
+                      R
+                    </p>
+                    <input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row1"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row2"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row3"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row4"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row5"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row6"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row7"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row8"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row9"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row10"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row11"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row12"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row13"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row14"
+                    /><input
+                      class="w-full center text-15 h-0-7cm"
+                      type="text"
+                      id="r2-row15"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div style="width: 3cm"; class="flex column">
+                <p
+                  class="center h-1cm text-bold flex justify-center align-center"
+                >
+                  3
+                </p>
+                <div style="gap: 5px;" class="flex">
+                  <div style="width: 1.5cm;">
+                    <p
+                      class="center h-1cm flex justify-center align-center text-bold"
+                    >
+                      S
+                    </p>
+                    <input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row1"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row2"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row3"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row4"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row5"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row6"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row7"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row8"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row9"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row10"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row11"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row12"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row13"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row14"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="s3-row15"
+                    />
+                  </div>
+                  <div style="width: 1.5cm;"">
+                   <p class="center flex justify-center align-center h-1cm text-bold">R</p>
+                    <input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row1"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row2"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row3"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row4"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row5"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row6"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row7"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row8"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row9"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row10"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row11"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row12"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row13"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row14"
+                    /><input
+                      class="w-full text-15 h-0-7cm"
+                      type="text"
+                      id="r3-row15"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </form>
+    </div>
+    <button class="accordion">Test values</button>
+    <div class="panel">
+      <form class="section_3">
+                <div>
+          <label for="reportedBy">Report By</label>
+          <input type="text" id="reportedBy" />
+        </div>
+                <div>
+          <label for="sign1_input">Sign</label>
+          <input type="text" id="sign1_input" />
+        </div>
+                <div>
+          <label for="date1">Date</label>
+          <input type="text" id="date1" />
+        </div>
+
+        <div>
+  <label for="checkedBy">Checked By</label>
+  <input type="text" id="checkedBy" />
+</div>
+                <div>
+          <label for="sign2_input">Sign</label>
+          <input type="text" id="sign2_input" />
+        </div>
+                        <div>
+          <label for="date2">Date</label>
+          <input type="text" id="date2" />
+        </div>
+        <div>
+             <label for="">Signature</label> <input type="file" id="imageInput" accept="image/*" />
+        </div>
+
+
+
+      </form>
+    </div>
+        <button class="generatePDFBtn" onclick="generatePDF()">Preview PDF</button>
+
+    </div>
+ 
+
+
+
+      
+<div id="preview" class="preview"></div>
+
+    
+
+    <script src="new.js"></script>
+  </body>
+</html>

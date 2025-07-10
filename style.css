@@ -1,0 +1,650 @@
+
+#results {
+  padding: 20px;
+  background-color: white;
+  /* width: 100%; */
+}
+#labResult {
+  /* width: 100%; */
+  /* max-width: 595pt; */
+  /* max-height: 841.89pt; */
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+.hidden {
+  visibility: hidden;
+}
+.text16 {
+  font-size: 16px;
+}
+.text17 {
+  font-size: 17px;
+}
+.text18 {
+  font-size: 18px;
+}
+.text19 {
+  font-size: 19px;
+}
+.mb {
+  margin-bottom: 4px;
+}
+.mb-1 {
+  margin-bottom: 10px;
+}
+.p-round {
+  padding: 5px;
+}
+.p-roundsm {
+  padding: 2px 0 2px 15px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: end;
+}
+.justify-space_between {
+  justify-content: space-between;
+}
+.block {
+  display: block;
+}
+.column {
+  flex-direction: column;
+}
+.w-full {
+  width: 100%;
+}
+.b-full {
+  border: 2px solid black;
+}
+.b-right {
+  border-right: transparent;
+}
+.b-left {
+  border-right: transparent;
+}
+.b-top {
+  border-top: transparent;
+}
+.b-bottom {
+  border-bottom: 2px solid black;
+}
+.block {
+  display: block;
+}
+.bold {
+  font-weight: 700;
+}
+.light {
+  font-weight: 100;
+}
+.center {
+  text-align: center;
+}
+.p-xy {
+  margin: 0 28px;
+  margin-right: 38px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.block {
+  display: block;
+}
+.minus {
+  width: 8px;
+  height: 4px;
+  background-color: black;
+  margin-right: 5px;
+}
+/* Header {
+  display: flex;
+  /* padding-top: 20px; */
+  /* padding-left: 25px;
+  padding-right: 25px; */
+  width: 100%;
+} */
+.details {
+  /* margin-right: 50px; */
+  width: 125%;
+}
+.three_block {
+  display: flex;
+  margin-bottom: 18px;
+  margin-right: 10px;
+}
+.white {
+  background-color: black;
+  width: 10px;
+  margin-right: 8px;
+}
+.white-left {
+  background-color: black;
+  width: 10px;
+  margin-left: 8px;
+}
+
+.background {
+  padding: 10px 20px;
+  height: 100%;
+  width: 95%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.938);
+  font-size: 1.3rem;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+/* ul {
+  font-weight: bold;
+  list-style-position: inside;
+  list-style: none;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+}
+ */
+.name_number_field {
+  display: flex;
+  width: 100%;
+  border: 2px solid bla ck;
+  border-right: transparent;
+}
+.patient_namefield {
+  border-right: 2px solid black;
+  padding: 3px 8px;
+  width: 100%;
+}
+/* #patient_name {
+  height: 30px;
+}
+#reciept_no {
+  height: 30px;
+} */
+.receipt_nofield {
+  padding: 3px 10px;
+  width: 100%;
+}
+.tests_options {
+  width: 75%;
+  padding: 10px 10px;
+  border: 2px solid black;
+}
+.tests_options ul li {
+  font-size: 20px;
+}
+.second_row {
+  display: flex;
+  width: 100%;
+  /* padding: 0 25px; */
+  height: 55px;
+}
+.third_row {
+  display: flex;
+  /* padding: 0 25px;
+  padding-left: 28px; */
+  height: 55px;
+}
+.table {
+  display: flex;
+  /* padding: 0 28px; */
+}
+.table .right {
+  width: 100%;
+}
+.table .left {
+  width: 80%;
+  border-right: 2px solid black;
+}
+.table_3cols {
+  display: flex;
+  width: 100%;
+}
+.col_1,
+.col_2,
+.col_3 {
+  border-right: 2px solid black;
+  /* width: 100%; */
+}
+.col_1 {
+  width: 35%;
+}
+.h-28 {
+  height: 28px !important;
+}
+.col_2 {
+  width: 32.5%;
+}
+.col_2 input {
+  width: 100%;
+  display: block;
+  /* height: 24px; */
+}
+.col_3 {
+  border-right: transparent;
+  width: 32.5%;
+}
+.col_3 input {
+  width: 100%;
+  display: block;
+  /* height: 24px; */
+}
+
+.exam {
+  display: flex;
+  justify-content: space-between;
+}
+.exam span {
+  margin-right: 50px;
+}
+
+.container {
+  padding: 10px;
+}
+
+@media (max-width: 2000px) {
+  .text10 {
+    font-size: 10px;
+  }
+
+  .text13 {
+    font-size: 13px;
+  }
+  .text-14 {
+    font-size: 14px;
+  }
+  .text-15 {
+    font-size: 15px;
+  }
+  .text16 {
+    font-size: 16px;
+  }
+  .text17 {
+    font-size: 17px;
+  }
+  .text18 {
+    font-size: 18px;
+  }
+  .text19 {
+    font-size: 19px;
+  }
+  .text-20 {
+    font-size: 20px;
+  }
+  .mt {
+    margin-top: 10px;
+  }
+  .mb {
+    margin-bottom: 4px;
+  }
+  .mb-1 {
+    margin-bottom: 10px;
+  }
+  .p-round {
+    padding: 5px;
+  }
+  .p-roundsm {
+    padding: 2px 0 0 15px;
+  }
+  .pl-15 {
+    padding-left: 15px;
+  }
+  .pl-20 {
+    padding-left: 20px;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .w-half {
+    width: 50%;
+  }
+  .w-75 {
+    width: 75%;
+  }
+  .w-80 {
+    width: 80%;
+  }
+  .w-60 {
+    width: 60%;
+  }
+  .w-30 {
+    width: 30%;
+  }
+  .w-35 {
+    width: 35%;
+  }
+  .w-25 {
+    width: 25%;
+  }
+  .w-20 {
+    width: 20%;
+  }
+  .w-40 {
+    width: 40%;
+  }
+  .w-100 {
+    width: 100px;
+  }
+  .w-1-5cm {
+    width: 1.5cm;
+  }
+  .w-2cm {
+    width: 2cm;
+  }
+  .w-2-4cm {
+    width: 2.48cm;
+  }
+  .w-2-3cm {
+    width: 2.52cm;
+  }
+  .w-2-5cm {
+    width: 2.5cm;
+  }
+  .w-3-5cm {
+    width: 3.5cm;
+  }
+  .w-4cm {
+    width: 4cm;
+  }
+  .w-5cm {
+    width: 5cm;
+  }
+  .w-6cm {
+    width: 6cm;
+  }
+  .w-6-5cm {
+    width: 6.5cm;
+  }
+  .w-7cm {
+    width: 7cm;
+  }
+  .w-9cm {
+    width: 9cm;
+  }
+  .w-12-5cm {
+    width: 12.5cm;
+  }
+  .w-10-5cm {
+    width: 10.5cm;
+  }
+  .w-8-5cm {
+    width: 8.5cm;
+  }
+  .w-10cm {
+    width: 10cm;
+  }
+  .w-11cm {
+    width: 11cm;
+  }
+  .w-19cm {
+    width: 19cm;
+  }
+  .w-19-5cm {
+    width: 19.5cm;
+  }
+  .w-190px {
+    width: 190px;
+  }
+  .w-500px {
+    width: 500px;
+  }
+  .h-3-25cm {
+    height: 3.25cm;
+  }
+  .h-1cm {
+    height: 1cm;
+  }
+  .h-2cm {
+    height: 2cm;
+  }
+  .h-1-2cm {
+    height: 1.2cm;
+  }
+  .h-1-5cm {
+    height: 1.5cm;
+  }
+  .h-0-7cm {
+    height: 0.74cm;
+  }
+  .h-0-6cm {
+    height: 0.6cm;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .pt-5 {
+    padding-top: 5px;
+  }
+  .border-top {
+    border-top: 2px solid black;
+  }
+  .border-left {
+    border-left: 2px solid black;
+  }
+  .b-full {
+    border: 2px solid black;
+  }
+  .b-right {
+    border-right: transparent;
+  }
+  .b-left {
+    border-right: transparent;
+  }
+  .b-top {
+    border-top: transparent;
+  }
+  .b-bottom {
+    border-bottom: 2px solid black;
+  }
+  .sign {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+  }
+  .block {
+    display: block;
+  }
+  .bold {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .text-bold {
+    font-weight: 900;
+  }
+  .light {
+    font-weight: 100;
+  }
+  .center {
+    text-align: center;
+  }
+  .p-xy {
+    margin: 0 28px;
+    margin-right: 38px;
+  }
+  .ml-5 {
+    margin-left: 5px;
+  }
+
+  .minus {
+    width: 6px;
+    height: 3px;
+    background-color: black;
+    margin-right: 5px;
+  }
+  /* 
+  Header {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+  } */
+  .details > h2 {
+    font-size: 22px;
+    font-weight: 900;
+    word-spacing: 13px;
+
+    font-family: Arial;
+  }
+  .details > h4 {
+    word-spacing: 4px;
+  }
+  .details {
+    /* margin-right: 50px; */
+    width: 120%;
+  }
+  .three_block {
+    display: flex;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  .white {
+    background-color: black;
+    width: 10px;
+    margin-right: 8px;
+  }
+  .white-left {
+    background-color: black;
+    width: 10px;
+    margin-left: 8px;
+  }
+
+  .background {
+    padding: 10px 20px;
+    height: 100%;
+    width: 95%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.938);
+    font-size: 1.3rem;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  /* ul {
+    font-weight: bold;
+    list-style-position: inside;
+    list-style: none;
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+  input,
+  select {
+    /* height: 30px; */
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 1px;
+    font-weight: 600;
+  }
+ */
+  .name_number_field {
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+    border-right: transparent;
+  }
+  .patient_namefield {
+    border-right: 2px solid black;
+    padding: 3px 8px;
+    width: 55%;
+  }
+  /* #patient_name {
+  height: 30px;
+}
+#reciept_no {
+  height: 30px;
+} */
+  .receipt_nofield {
+    padding: 3px 10px;
+    width: 45%;
+  }
+  /* .tests_options {
+    width: 80%;
+    padding: 10px 20px 6.5px;
+    border: 2px solid black;
+    font-size: 1.1rem;
+  } */
+  .second_row {
+    display: flex;
+    width: 100%;
+    padding: 0 25px;
+    height: 55px;
+  }
+  .third_row {
+    display: flex;
+    padding: 0 25px;
+    padding-left: 28px;
+    height: 55px;
+  }
+  .table {
+    display: flex;
+    width: 100%;
+    padding: 0 28px;
+  }
+  .table .right {
+    width: 55%;
+    margin-top: 4px;
+  }
+  .table .left {
+    width: 45%;
+    border-right: 2px solid black;
+  }
+  .table_3cols {
+    display: flex;
+    width: 100%;
+  }
+  .col_1,
+  .col_2,
+  .col_3 {
+    border-right: 2px solid black;
+    /* width: 100%; */
+  }
+  .col_1 {
+    width: 35%;
+  }
+  .h-28 {
+    height: 28px !important;
+  }
+  .col_2 {
+    width: 32.5%;
+  }
+  .col_2 input {
+    width: 100%;
+    display: block;
+    height: 24px;
+  }
+  .col_3 {
+    border-right: transparent;
+    width: 32.5%;
+  }
+  .col_3 input {
+    width: 100%;
+    display: block;
+    height: 24px;
+  }
+
+  .exam {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .exam span {
+    margin-right: 50px;
+  }
+}

@@ -1093,7 +1093,7 @@ async function generatePDF() {
 
   // STEP 4: Save
   generateBtn.addEventListener("click", () => {
-    doc.save("result.pdf");
+    doc.save(`${patientName.value}-result.pdf`);
   });
 }
 
